@@ -1,6 +1,6 @@
 <h2>Heroes</h2>
 <ul class="heroes">
-  <li (click)="showDetails(hero)" *ngFor="let hero of heroes">
+  <li [class.selected]="hero===selectedHero" (click)="showDetails(hero)" *ngFor="let hero of heroes">
     <span class="badge">{{hero.id}} - {{hero.name}}</span>
   </li>
 </ul>
